@@ -145,7 +145,7 @@
       height: auto;
     }
 
-     .site-info {
+    .site-info {
       display: flex;
       align-items: flex-end;
       margin-top: -6px;
@@ -184,6 +184,17 @@
       padding: 30px 20px;
       color: #666;
       font-size: 0.9rem;
+    }
+
+    /* Custom contact link styles */
+    .contact-link {
+      color: #ffffff;        /* white by default */
+      text-decoration: none; /* remove underline */
+      transition: color 0.2s ease-in-out;
+    }
+
+    .contact-link:hover {
+      color: #C8A2C8;        /* lilac on hover */
     }
 
     @media (max-width: 600px) {
@@ -274,8 +285,21 @@
     <section class="content">
       <h1>Hey 👋🏻</h1>
       <p>If you want to get in touch, you can find me here.</p>
-      <p><strong>Email :</strong> cdlayer8@proton.me </p>
-      <p>Thats all for now! </p>
+
+      <p><strong>LinkedIn :</strong> 
+        <a href="https://www.linkedin.com/in/charlotte-voss-2471a5304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+           target="_blank" class="contact-link">
+          Charlotte Voss
+        </a>
+      </p>
+     
+      <p><strong>Email :</strong> 
+        <a href="mailto:cdlayer8@proton.me" class="contact-link">
+          cdlayer8@proton.me
+        </a>
+      </p>
+
+      <p>That’s all for now!</p>
       
     </section>
   </div>
